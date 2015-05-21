@@ -1,0 +1,860 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Fast Order Service</title>
+
+<script type="text/javascript">
+function def()
+{
+
+document.getElementById("lmn").style.visibility="hidden";
+document.getElementById("apl").style.visibility="hidden";
+document.getElementById("bby").style.visibility="hidden";
+document.getElementById("mgo").style.visibility="hidden";
+document.getElementById("bna").style.visibility="hidden";
+document.getElementById("ong").style.visibility="hidden";
+
+document.getElementById("hfe").style.visibility="hidden";
+document.getElementById("bfe").style.visibility="hidden";
+document.getElementById("cfe").style.visibility="hidden";
+
+document.getElementById("bkt").style.visibility="hidden";
+document.getElementById("grt").style.visibility="hidden";
+document.getElementById("lmt").style.visibility="hidden";
+document.getElementById("cdt").style.visibility="hidden";
+
+document.getElementById("bkt").style.visibility="hidden";
+document.getElementById("grt").style.visibility="hidden";
+document.getElementById("lmt").style.visibility="hidden";
+document.getElementById("cdt").style.visibility="hidden";
+
+document.getElementById("vgb").style.visibility="hidden";
+document.getElementById("ceb").style.visibility="hidden";
+document.getElementById("chb").style.visibility="hidden";
+document.getElementById("hab").style.visibility="hidden";
+
+document.getElementById("grp").style.visibility="hidden";
+document.getElementById("dfp").style.visibility="hidden";
+document.getElementById("map").style.visibility="hidden";
+document.getElementById("fcp").style.visibility="hidden";
+document.getElementById("scp").style.visibility="hidden";
+
+
+document.getElementById("ofr10").disabled=true;
+document.getElementById("ofr20").disabled=true;
+document.getElementById("ofr30").disabled=true;
+
+
+document.getElementById("tot").value=0;
+document.getElementById("showtot").disabled=true;
+
+
+
+}
+
+function qty()
+{
+var plmn=0,papl=0,pbby=0,pmgo=0,pbna=0,pong=0;
+var phfe=0,pcfe=0,pbfe=0;
+var pbkt=0,pgrt=0,plmt=0,pcdt=0;
+var pvgb=0,pceb=0,pchb=0,phab=0;
+var pgrp=0,pdfp=0,pmap=0,pfcp=0,pscp=0;
+
+var qty=1;
+
+/*Juice Start*/
+if(document.getElementById("LMN").checked)
+{
+document.getElementById("lmn").style.visibility="visible";
+document.getElementById("lmn").focus();
+var qty=document.getElementById("lmn").value;
+plmn= 30*qty;
+
+}
+else
+{
+document.getElementById("lmn").style.visibility="hidden";
+document.getElementById("lmn").value=0;
+}
+
+if(document.getElementById("APL").checked)
+{
+document.getElementById("apl").style.visibility="visible";
+document.getElementById("apl").focus();
+qty=document.getElementById("apl").value;
+papl=50*qty;
+}
+else
+{
+document.getElementById("apl").style.visibility="hidden";
+document.getElementById("apl").value=0;
+}
+
+
+if(document.getElementById("BBY").checked)
+{
+document.getElementById("bby").style.visibility="visible";
+document.getElementById("bby").focus();
+qty=document.getElementById("bby").value;
+pbby=65*qty;
+}
+else
+{
+document.getElementById("bby").style.visibility="hidden";
+document.getElementById("bby").value=0;
+}
+
+
+if(document.getElementById("MGO").checked)
+{
+document.getElementById("mgo").style.visibility="visible";
+document.getElementById("mgo").focus();
+qty=document.getElementById("mgo").value;
+pmgo=35*qty;
+}
+else
+{
+document.getElementById("mgo").style.visibility="hidden";
+document.getElementById("mgo").value=0;
+}
+
+if(document.getElementById("BNA").checked)
+{
+document.getElementById("bna").style.visibility="visible";
+document.getElementById("bna").focus();
+qty=document.getElementById("bna").value;
+pbna=40*qty;
+}
+else
+{
+document.getElementById("bna").style.visibility="hidden";
+document.getElementById("bna").value=0;
+}
+
+if(document.getElementById("ONG").checked)
+{
+document.getElementById("ong").style.visibility="visible";
+document.getElementById("ong").focus();
+qty=document.getElementById("ong").value;
+pong=55*qty;
+}
+else
+{
+document.getElementById("ong").style.visibility="hidden";
+document.getElementById("ong").value=0;
+}
+/*Juice stop*/
+
+/*coffee*/
+if(document.getElementById("HFE").checked)
+{
+document.getElementById("hfe").style.visibility="visible";
+document.getElementById("hfe").focus();
+var qty=document.getElementById("hfe").value;
+phfe= 45*qty;
+
+}
+else
+{
+document.getElementById("hfe").style.visibility="hidden";
+document.getElementById("hfe").value=0;
+}
+
+if(document.getElementById("CFE").checked)
+{
+document.getElementById("cfe").style.visibility="visible";
+document.getElementById("cfe").focus();
+qty=document.getElementById("cfe").value;
+pcfe=50*qty;
+}
+else
+{
+document.getElementById("cfe").style.visibility="hidden";
+document.getElementById("cfe").value=0;
+}
+
+
+if(document.getElementById("BFE").checked)
+{
+document.getElementById("bfe").style.visibility="visible";
+document.getElementById("bfe").focus();
+qty=document.getElementById("bfe").value;
+pbfe=65*qty;
+}
+else
+{
+document.getElementById("bfe").style.visibility="hidden";
+document.getElementById("bfe").value=0;
+}
+/*coffee stop*/
+
+/*tea start*/
+if(document.getElementById("BKT").checked)
+{
+document.getElementById("bkt").style.visibility="visible";
+document.getElementById("bkt").focus();
+var qty=document.getElementById("bkt").value;
+pbkt= 35*qty;
+
+}
+else
+{
+document.getElementById("bkt").style.visibility="hidden";
+document.getElementById("bkt").value=0;
+}
+
+if(document.getElementById("GRT").checked)
+{
+document.getElementById("grt").style.visibility="visible";
+document.getElementById("grt").focus();
+qty=document.getElementById("grt").value;
+pgrt=65*qty;
+}
+else
+{
+document.getElementById("grt").style.visibility="hidden";
+document.getElementById("grt").value=0;
+}
+
+
+if(document.getElementById("LMT").checked)
+{
+document.getElementById("lmt").style.visibility="visible";
+document.getElementById("lmt").focus();
+qty=document.getElementById("lmt").value;
+plmt=40*qty;
+}
+else
+{
+document.getElementById("lmt").style.visibility="hidden";
+document.getElementById("lmt").value=0;
+}
+
+if(document.getElementById("CDT").checked)
+{
+document.getElementById("cdt").style.visibility="visible";
+document.getElementById("cdt").focus();
+qty=document.getElementById("cdt").value;
+pcdt=35*qty;
+}
+else
+{
+document.getElementById("cdt").style.visibility="hidden";
+document.getElementById("cdt").value=0;
+}
+/*tea stop*/
+
+/*Pizza start*/
+if(document.getElementById("GRP").checked)
+{
+document.getElementById("grp").style.visibility="visible";
+document.getElementById("grp").focus();
+var qty=document.getElementById("grp").value;
+pgrp= 199*qty;
+
+}
+else
+{
+document.getElementById("grp").style.visibility="hidden";
+document.getElementById("grp").value=0;
+}
+
+if(document.getElementById("DFP").checked)
+{
+document.getElementById("dfp").style.visibility="visible";
+document.getElementById("dfp").focus();
+qty=document.getElementById("dfp").value;
+pdfp=199*qty;
+}
+else
+{
+document.getElementById("dfp").style.visibility="hidden";
+document.getElementById("dfp").value=0;
+}
+
+
+if(document.getElementById("MAP").checked)
+{
+document.getElementById("map").style.visibility="visible";
+document.getElementById("map").focus();
+qty=document.getElementById("map").value;
+pmap=149*qty;
+}
+else
+{
+document.getElementById("map").style.visibility="hidden";
+document.getElementById("map").value=0;
+}
+
+if(document.getElementById("FCP").checked)
+{
+document.getElementById("fcp").style.visibility="visible";
+document.getElementById("fcp").focus();
+qty=document.getElementById("fcp").value;
+pfcp=249*qty;
+}
+else
+{
+document.getElementById("fcp").style.visibility="hidden";
+document.getElementById("fcp").value=0;
+}
+
+if(document.getElementById("SCP").checked)
+{
+document.getElementById("scp").style.visibility="visible";
+document.getElementById("scp").focus();
+qty=document.getElementById("scp").value;
+pscp=229*qty;
+}
+else
+{
+document.getElementById("scp").style.visibility="hidden";
+document.getElementById("scp").value=0;
+}
+/*Pizza stop*/
+
+
+/*burger start*/
+if(document.getElementById("VGB").checked)
+{
+document.getElementById("vgb").style.visibility="visible";
+document.getElementById("vgb").focus();
+var qty=document.getElementById("vgb").value;
+pbkt= 35*qty;
+
+}
+else
+{
+document.getElementById("vgb").style.visibility="hidden";
+document.getElementById("vgb").value=0;
+}
+
+if(document.getElementById("CEB").checked)
+{
+document.getElementById("ceb").style.visibility="visible";
+document.getElementById("ceb").focus();
+qty=document.getElementById("ceb").value;
+pceb=55*qty;
+}
+else
+{
+document.getElementById("ceb").style.visibility="hidden";
+document.getElementById("ceb").value=0;
+}
+
+
+if(document.getElementById("CHB").checked)
+{
+document.getElementById("chb").style.visibility="visible";
+document.getElementById("chb").focus();
+qty=document.getElementById("chb").value;
+pchb=75*qty;
+}
+else
+{
+document.getElementById("chb").style.visibility="hidden";
+document.getElementById("chb").value=0;
+}
+
+if(document.getElementById("HAB").checked)
+{
+document.getElementById("hab").style.visibility="visible";
+document.getElementById("hab").focus();
+qty=document.getElementById("hab").value;
+phab=80*qty;
+}
+else
+{
+document.getElementById("hab").style.visibility="hidden";
+document.getElementById("hab").value=0;
+}
+/*burger stop*/
+
+/*juice start*/
+if(isNaN(document.getElementById("lmn").value)==true)
+{
+alert("Please enter the numeric value");
+document.getElementById("lmn").value="";
+document.getElementById("lmn").focus();
+}
+
+if(isNaN(document.getElementById("apl").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("apl").value="";
+document.getElementById("apl").focus();
+}
+
+if(isNaN(document.getElementById("bby").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("bby").value="";
+document.getElementById("bby").focus();
+}
+
+if(isNaN(document.getElementById("mgo").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("bna").value="";
+document.getElementById("mgo").focus();
+}
+if(isNaN(document.getElementById("bna").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("bna").value="";
+document.getElementById("bna").focus();
+}
+if(isNaN(document.getElementById("ong").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("ong").value="";
+document.getElementById("ong").focus();
+}
+/*juice stop*/
+
+/*pizza start*/
+if(isNaN(document.getElementById("grp").value)==true)
+{
+alert("Please enter the numeric value");
+document.getElementById("grp").value="";
+document.getElementById("grp").focus();
+}
+
+if(isNaN(document.getElementById("dfp").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("dfp").value="";
+document.getElementById("dfp").focus();
+}
+
+if(isNaN(document.getElementById("map").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("map").value="";
+document.getElementById("map").focus();
+}
+
+if(isNaN(document.getElementById("fcp").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("fcp").value="";
+document.getElementById("fcp").focus();
+}
+if(isNaN(document.getElementById("scp").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("scp").value="";
+document.getElementById("scp").focus();
+}
+
+/*Pizza stop*/
+
+/*coffee*/
+if(isNaN(document.getElementById("hfe").value)==true)
+{
+alert("Please enter the numeric value");
+document.getElementById("hfe").value="";
+document.getElementById("hfe").focus();
+}
+
+if(isNaN(document.getElementById("cfe").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("cfe").value="";
+document.getElementById("cfe").focus();
+}
+
+if(isNaN(document.getElementById("bfe").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("bfe").value="";
+document.getElementById("bfe").focus();
+}
+/*coffee stop*/
+
+/*tea start*/
+if(isNaN(document.getElementById("bkt").value)==true)
+{
+alert("Please enter the numeric value");
+document.getElementById("bkt").value="";
+document.getElementById("bkt").focus();
+}
+
+if(isNaN(document.getElementById("grt").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("grt").value="";
+document.getElementById("grt").focus();
+}
+
+if(isNaN(document.getElementById("lmt").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("lmt").value="";
+document.getElementById("lmt").focus();
+}
+
+if(isNaN(document.getElementById("cdt").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("cdt").value="";
+document.getElementById("cdt").focus();
+}
+/*tea stop*/
+
+
+/*burger start*/
+
+if(isNaN(document.getElementById("vgb").value)==true)
+{
+alert("Please enter the numeric value");
+document.getElementById("vgb").value="";
+document.getElementById("vgb").focus();
+}
+
+if(isNaN(document.getElementById("ceb").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("ceb").value="";
+document.getElementById("ceb").focus();
+}
+
+if(isNaN(document.getElementById("chb").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("chb").value="";
+document.getElementById("chb").focus();
+}
+
+if(isNaN(document.getElementById("hab").value)==true)
+{
+alert("please enter the numeric value");
+document.getElementById("hab").value="";
+document.getElementById("hab").focus();
+}
+/*burger stop*/
+
+
+var totaljuice= plmn + papl + pbby + pmgo + pbna + pong ;
+var totalcoffee= pbfe + pcfe + phfe;
+var totaltea= pbkt + pgrt + plmt + pcdt;
+var totalburger= pvgb + pceb + pchb + phab ;
+var totalpizza= pgrp + pdfp + pmap + pfcp + pscp;
+var Stotal= totaljuice + totalcoffee + totaltea + totalburger + totalpizza;
+var Ttotal= totaljuice + totalcoffee + totaltea + totalburger + totalpizza;
+var total;
+
+
+if(Stotal>500 && Stotal<800)
+{
+  total= Stotal- (Stotal*0.1) ;
+  document.getElementById("ofr10").checked=true;
+  document.getElementById("ofr20").checked=false;
+  document.getElementById("ofr30").checked=false;
+}
+else if(Stotal>801 && Stotal<1200)
+{
+  total= Stotal- (Stotal*0.2) ; 
+  document.getElementById("ofr20").checked=true;
+  document.getElementById("ofr10").checked=false;
+  document.getElementById("ofr30").checked=false;
+}
+else if(Stotal>1201)
+{
+  total= Stotal- (Stotal*0.3); 
+  document.getElementById("ofr30").checked=true;
+  document.getElementById("ofr10").checked=false;
+  document.getElementById("ofr20").checked=false;
+}
+else
+{
+    total=Stotal;
+    document.getElementById("ofr10").checked=false;
+    document.getElementById("ofr20").checked=false;
+    document.getElementById("ofr30").checked=false;
+   
+}
+
+document.getElementById("tot").value=total;
+document.getElementById("showtot").value=total;
+//document.getElementById("temptot").value=Stotal;
+
+
+
+
+}
+
+function onlinePay()
+{
+    if(document.getElementById("onl").checked)
+    {
+        window.open("onlinePay/onlinePay.html",'_blank');
+    }
+}
+
+</script>
+
+<link rel="stylesheet" href="stylecust.css" />
+</head>
+
+    <body onLoad="def()" onUnload="unload()" bgcolor="CCFF66">
+        
+<form id="form1" name="form1" method="post" action="Proc">
+<table width="100%" height="488" border="1">
+  <tr>
+    <th width="10%" height="65" scope="col" bgcolor="FFCC66" background="images/cof.jpeg" ></th>
+    <th width="80%" scope="col" bgcolor="000000">
+        <table width="100%">
+            <tr>
+            <td width="20%">
+                <embed src="images/1.jpg" width="100%" height="100%" loop="true">  </embed>
+             </td>
+                <td width="20%">
+                    <embed src="images/2.jpeg" width="100%" height="100%" loop="true"></embed>
+                </td>
+                <td width="20%">
+                    <embed src="images/3.jpeg" width="100%" height="100%" loop="true"></embed>
+                </td>
+                <td width="20%">
+                    <embed src="images/4.jpeg" width="100%" height="100%" loop="true"></embed>
+                </td>
+                <td width="20%">
+                    <embed src="images/5.jpeg" width="100%" height="100%" loop="true"></embed>
+                </td>
+            </tr>
+    </th>
+            
+        </table>
+            
+        
+    <td width="10%" scope="col" bgcolor="FFCC66">
+        <img src="images/DIT.png" height="100" width="100%"></br>
+        <b><u>Project By:</u></b><br>
+        >Akshay Gupta(TL)<br>
+        >Anchal Tomar<br>
+        >Mahendra Bhama<br>
+        >Archie<br>
+            <b>Branch:</b>IT(A) 4th yr</br>
+            
+        </td>
+  </tr>
+  <tr>
+    <td height="283" bgcolor="FFFFCC" >
+       
+            
+            <marquee  behavior="scroll" direction="up" scrollamount="3" height="500">
+            <b>Tips for a healthy Living</b><br/><br/>
+                <b> *</b> Enjoy big glass of water first thing in the morning.<br/><br/>
+                <b> *</b> Grab  few fresh fruit on your way out.<br /><br/>
+                <b> *</b>Exercise on the go. <br/><br/>
+                <b> *</b> Eat a handful of nuts.<br/><br/>
+                <b> *</b>Say yes to juice everyday.<br/><br/>
+                <img src="images/scr.png"></img>
+                        
+                        
+        </marquee>
+               
+    </td>
+    <td>
+      <table width="100%" height="10" border="1">
+      <tr>
+          <td width="20%" bgcolor="FFCC66" align="center"><b>Juice</b></td>
+      <td width="20%" bgcolor="FFCC66" align="center"><b>Coffee</b></td>
+      <td width="20%" bgcolor="FFCC66" align="center"><b>Tea</b></td>
+      <td width="20%" bgcolor="FFCC66" align="center"><b>Burger</b></td>
+      <td width="20%" bgcolor="FFCC66" align="center"><b>Pizza</b></td>
+      
+      </tr>
+      </table>
+      <table width="100%" height="490" border="1">
+      <tr>
+      <td width="20%" bgcolor="FFFFCC">
+      <input type="checkbox" name="LMN" id="LMN" value="Lemon" onclick="qty()"/>
+      Lemon<input type="text" name="price" id="price" size="4" value="Rs. 30" disabled /><br>
+          
+          <input type="text" name="lmn" id="lmn" size="3" value="0" onchange="qty()" ><input type="hidden" name="lmnt" value="3"><br><br>
+      
+      <input type="checkbox" name="APL" id="APL" value="Apple" onclick="qty()" />
+      Apple<input type="text" name="price" id="price" size="4" value="Rs. 50" disabled /><br>
+      <input type="text" name="apl" id="apl" size="3" value="0" onChange="qty()" ><input type="hidden" name="aplt" value="3"><br><br>
+      
+      <input type="checkbox" name="BBY" id="BBY" value="BlueBerry" onclick="qty()" /> 
+      Blue Berry<input type="text" name="price" id="price" size="4" value="Rs. 65" disabled /><br>
+      <input type="text" name="bby" id="bby" size="3" value="0" onChange="qty()" /><input type="hidden" name="bbyt" value="3"><br><br>
+      
+      <input type="checkbox" name="MGO" id="MGO" value="Mango" onclick="qty()" />
+      Mango<input type="text" name="price" id="price" size="4" value="Rs. 35" disabled /><br>
+      <input type="text" name="mgo" id="mgo" size="3" value="0" onChange="qty()" /><input type="hidden" name="mgot" value="3"><br><br>
+      
+      <input type="checkbox" name="BNA" id="BNA" value="Banana" onclick="qty()" />
+      Banana<input type="text" name="price" id="price" size="4" value="Rs. 40" disabled /><br>
+      <input type="text" name="bna" id="bna" size="3" value="0" onChange="qty()" /><input type="hidden" name="bnat" value="3"><br><br>
+      
+      <input type="checkbox" name="ONG" id="ONG" value="Orange" onclick="qty()" />
+      Orange<input type="text" name="price" id="price" size="4" value="Rs. 55" disabled /><br>
+      <input type="text" name="ong" id="ong" size="3" value="0" onChange="qty()" /><input type="hidden" name="ongt" value="3"><br><br>
+      
+      
+      </td>
+      
+      <td width="20%" bgcolor="FFFFCC" >
+          <input type="checkbox" name="HFE" id="HFE" value="HotCoffee" onclick="qty()"/>
+      Hot Coffee <input type="text" name="price" id="price" size="4" value="Rs. 45" disabled /><br>
+          
+          <input type="text" name="hfe" id="hfe" size="3" value="0" onchange="qty()" ><input type="hidden" name="hfet" value="3"><br><br>
+      
+      <input type="checkbox" name="CFE" id="CFE" value="ColdCoffee" onclick="qty()" />
+      Cold Coffee<input type="text" name="price" id="price" size="4" value="Rs. 50" disabled /><br>
+      <input type="text" name="cfe" id="cfe" size="3" value="0" onChange="qty()" ><input type="hidden" name="cfet" value="3"><br><br>
+      
+      <input type="checkbox" name="BFE" id="BFE" value="BlackCoffee" onclick="qty()" /> 
+      Black Coffee<input type="text" name="price" id="price" size="4" value="Rs. 65" disabled /><br>
+      <input type="text" name="bfe" id="bfe" size="3" value="0" onChange="qty()" /><input type="hidden" name="bfet" value="5"><br><br>
+      
+      
+      
+      </td>
+      
+          
+      
+      <td width="20%" bgcolor="FFFFCC">
+          <input type="checkbox" name="BKT" id="BKT" value="BlackTea" onclick="qty()"/>
+      Black Tea <input type="text" name="price" id="price" size="4" value="Rs. 35" disabled /><br>
+          
+          <input type="text" name="bkt" id="bkt" size="3" value="0" onchange="qty()" ><input type="hidden" name="bktt" value="3"><br><br>
+      
+      <input type="checkbox" name="GRT" id="GRT" value="GreenTea" onclick="qty()" />
+      Green Tea<input type="text" name="price" id="price" size="4" value="Rs. 65" disabled /><br>
+      <input type="text" name="grt" id="grt" size="3" value="0" onChange="qty()" ><input type="hidden" name="grtt" value="3"><br><br>
+      
+      <input type="checkbox" name="LMT" id="LMT" value="LemonTea" onclick="qty()" /> 
+      Lemon Tea<input type="text" name="price" id="price" size="4" value="Rs. 40" disabled /><br>
+      <input type="text" name="lmt" id="lmt" size="3" value="0" onChange="qty()" /><input type="hidden" name="lmtt" value="5"><br><br>
+                  
+      <input type="checkbox" name="CDT" id="CDT" value="ColdTea" onclick="qty()" /> 
+      Cold Tea<input type="text" name="price" id="price" size="4" value="Rs. 35" disabled /><br>
+      <input type="text" name="cdt" id="cdt" size="3" value="0" onChange="qty()" /><input type="hidden" name="cdtt" value="5"><br><br>
+      
+      
+      
+      </td>
+      <td width="20%" bgcolor="FFFFCC">
+          <input type="checkbox" name="VGB" id="VGB" value="VegBurger" onclick="qty()"/>
+      Veg Burger <input type="text" name="price" id="price" size="4" value="Rs. 35" disabled /><br>
+          
+          <input type="text" name="vgb" id="vgb" size="3" value="0" onchange="qty()" ><input type="hidden" name="vgbt" value="3"><br><br>
+      
+      <input type="checkbox" name="CEB" id="CEB" value="CheeseBurger" onclick="qty()" />
+      Cheese Burger<input type="text" name="price" id="price" size="4" value="Rs. 55" disabled /><br>
+      <input type="text" name="ceb" id="ceb" size="3" value="0" onChange="qty()" ><input type="hidden" name="cebt" value="3"><br><br>
+      
+      <input type="checkbox" name="CHB" id="CHB" value="ChickenBurger" onclick="qty()" /> 
+      Chicken Burger <input type="text" name="price" id="price" size="4" value="Rs. 75" disabled /><br>
+      <input type="text" name="chb" id="chb" size="3" value="0" onChange="qty()" /><input type="hidden" name="chbt" value="5"><br><br>
+                  
+      <input type="checkbox" name="HAB" id="HAB" value="HamBurger" onclick="qty()" /> 
+      Ham burger<input type="text" name="price" id="price" size="4" value="Rs. 80" disabled /><br>
+      <input type="text" name="hab" id="hab" size="3" value="0" onChange="qty()" /><input type="hidden" name="habt" value="5"><br><br>
+      
+      
+      
+      </td>
+      <td width="20%" bgcolor="FFFFCC">
+          <input type="checkbox" name="GRP" id="GRP" value="GrilledPizza" onclick="qty()"/>
+      Grilled Pizza <input type="text" name="price" id="price" size="5" value="Rs. 199" disabled /><br>
+          
+          <input type="text" name="grp" id="grp" size="3" value="0" onchange="qty()" ><input type="hidden" name="grpt" value="3"><br><br>
+      
+      <input type="checkbox" name="DFP" id="DFP" value="DeepFriedPizza" onclick="qty()" />
+      Deep Fried Pizza<input type="text" name="price" id="price" size="5" value="Rs. 199" disabled /><br>
+      <input type="text" name="dfp" id="dfp" size="3" value="0" onChange="qty()" ><input type="hidden" name="dfpt" value="3"><br><br>
+      
+      <input type="checkbox" name="MAP" id="MAP" value="Magherita" onclick="qty()" /> 
+      Magherita <input type="text" name="price" id="price" size="5" value="Rs. 149" disabled /><br>
+      <input type="text" name="map" id="map" size="3" value="0" onChange="qty()" /><input type="hidden" name="mapt" value="5"><br><br>
+                  
+      <input type="checkbox" name="FCP" id="FCP" value="FullCheesePizza" onclick="qty()" /> 
+      Full Cheese Pizza<input type="text" name="price" id="price" size="5" value="Rs. 249" disabled /><br>
+      <input type="text" name="fcp" id="fcp" size="3" value="0" onChange="qty()" /><input type="hidden" name="fcpt" value="5"><br><br>
+      
+       <input type="checkbox" name="SCP" id="SCP" value="SpicyChilliPizza" onclick="qty()" /> 
+      Spicy Chilli Pizza<input type="text" name="price" id="price" size="5" value="Rs. 229" disabled /><br>
+      <input type="text" name="scp" id="scp" size="3" value="0" onChange="qty()" /><input type="hidden" name="scpt" value="5"><br><br>
+      
+      
+      
+      </td>
+      
+      
+      
+      </tr>
+      
+      
+     
+      </table>
+    <td bgcolor="FFFFCC">   
+        <table width="100%" height="430" border="0">
+            <p align="center" color="GREEN"><b>Appropriate offer(s) will be added automatically.</b></p>
+<tr>
+    <th bgcolor="FFCC66"><font size="5 ">Offers!!</font></th>
+</tr>
+<tr>
+    <td bgcolor="CCFFFF">
+    <input type="radio" name="offer" id="ofr10" value="ofr10" />10% off on purchase of more than Rs.500
+</td>
+</tr>
+<tr >
+<td bgcolor="99FFFF">
+<input type="radio" name="offer" id="ofr20" value="ofr20"  />20% off on purchase of more than Rs.800
+</td>
+</tr>
+
+<tr>
+<td bgcolor="33FFFF">
+<input type="radio" name="offer" id="ofr30" value="ofr30"  />30% off on purchase of more than Rs.1200
+</td>
+</tr>
+ </table>
+    
+    
+    </td>
+  </tr>
+  <tr>
+    <td bgcolor="FFCC66">Total Payment:- </td>
+    <td bgcolor="FFCC66">
+    <p align="center">
+        <b>Rs.</b><input type="text" name="showtot" id="showtot" disabled/>
+        <input type="hidden" name="total" id="tot" />
+    <input type="radio" name="pay" id="csh" value="csh"  checked />Cash
+    <input type="radio" name="pay" id="onl" value="onl" onClick="onlinePay()"/>Online
+    <input type="submit" value="Confirm order & Pay" >
+    <input type="reset" value="Reset">
+        </td></p>
+        <td width="20%" align="center" bgcolor="FFCC66" />
+          <!--  Table no:<br>
+    <input type="text" name="ctableno" id="CTN" size="3"/> -->
+    </td>
+        
+  </tr>
+    
+</table>
+</form>
+         <style>
+      .backb{
+position: fixed;
+top: 20px;  
+left: 4px;
+width: 46px;
+height: 46px;
+
+}
+      </style>    
+      <script> function goBack() {
+    window.history.back();
+}
+   </script>     
+    <div><img src="icons/back.png" class="backb" onclick="goBack()" id="backb"/></div> 
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Secure Payment Gateway</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <script type="text/javascript">
+           
+    
+            function pay()
+            {
+               confirm("Payment Recieved Now click on confirm order on main page")
+                 window.open('','_self').close(); 
+               
+            }
+            
+            </script>
+    </head>
+    <body align="center">
+        <table width="40%" align="center" border="1">˙
+            <tr>
+                <td><h2 align="center"><u>Secure Payment Gateway</u></h2></td>
+            </tr>
+            <tr><td>Card number: <input type="text" id="cn" /><br></td>
+            <tr><td>Expiry Date: <input type="text" id="dd" size="2"  />
+                    <input type="text" id="mm" size="2" /> 
+                    <input type="text" id="yy" size="2"  />
+                    <br></td></tr>
+             <tr><td>cvv no: <input type="password" id="cvv" size="4"  /><br></td></tr>
+             <tr><td><input type="button" id="pn" value="Pay now" onclick="pay()"></td></tr>
+        </table>
+        
+    </body>
+</html>

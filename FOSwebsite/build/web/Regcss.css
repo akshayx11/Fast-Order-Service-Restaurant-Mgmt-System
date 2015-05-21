@@ -1,0 +1,64 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 20, 2015, 4:08:59 PM
+    Author     : akshaygupta
+*/
+
+
+input[type="checkbox"] {
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+input[type="text"] {
+   /* margin-left: 1px;
+    width: 60px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #CCFF66;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;*/
+   
+-moz-border-radius-topright: 30px; 
+    -webkit-border-top-right-radius: 30px; 
+    border-top-right-radius: 30px; 
+    -moz-border-radius-bottomright: 30px; 
+    -webkit-border-bottom-right-radius: 30px; 
+    border-bottom-right-radius: 30px; 
+    border: 1px solid #848484; 
+    outline:0; 
+    height:20px; 
+    width: 150px; 
+    
+}
+
+table, tr,td{
+    
+    border-radius: 5px;
+    
+    }
+    
+    input[type="submit"], input[type="reset"], input[type="button"]{
+        
+     background: #222;
+  line-height: 1;
+  padding: .6em .8em;
+  color: #fff;
+  background-color: #009afd;
+  border: 1px solid #1777b7;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.3) inset,0 1px 1px rgba(100,100,100,0.3);
+  padding: 8px 10px 7px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+   
+   
+        
+    }
